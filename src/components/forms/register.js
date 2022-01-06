@@ -18,26 +18,6 @@ const Register = ({ showLogin }) => {
             </Form.Text>
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicName">
-            <Form.Control type="text" name='fName' placeholder="*First Name" />
-            <Form.Text className="text-muted" >
-                <span className='error'></span>
-            </Form.Text>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formBasicName">
-            <Form.Control type="text" name='lName' placeholder="*Last Name" />
-            <Form.Text className="text-muted" >
-                <span className='error'></span>
-            </Form.Text>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formBasicName">
-            <Form.Control type="text" name='company' placeholder="*Company Name" />
-            <Form.Text className="text-muted" >
-                <span className='error'></span>
-            </Form.Text>
-        </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Control type="password" name='password' placeholder="*Password" />
@@ -46,12 +26,6 @@ const Register = ({ showLogin }) => {
             </Form.Text>
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control type="password" name='passwordMatch' placeholder="*Confirm Password" />
-            <Form.Text className="text-muted" >
-                <span className='error'>{formErorrs}</span>
-            </Form.Text>
-        </Form.Group>
         <div className='button-container'>
             <Button variant="secondary" onClick={showLogin} className='secondary-button'>
                 Login
