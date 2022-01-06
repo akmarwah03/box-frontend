@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
 
+import Authentication from './components/authentication';
 function App() {
   return (
-    "My blank project"
+    <div className='App'>
+      <Authentication />
+    </div>
   );
 }
 
